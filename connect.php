@@ -1,9 +1,9 @@
 <?php
 // Database connection variables
-$servername = "localhost"; // Database server (localhost for local server)
-$username = "root"; // MySQL default username in XAMPP
-$password = ""; // MySQL default password in XAMPP (empty by default)
-$dbname = "lost_and_found"; // Name of the database you created
+$servername = "localhost"; 
+$username = "root"; 
+$password = ""; 
+$dbname = "lost_and_found"; 
 
 // Create connection to MySQL
 $conn = new mysqli($servername, $username, $password, $dbname);
