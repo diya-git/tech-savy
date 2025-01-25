@@ -19,10 +19,14 @@
     <input type="tel" id="contact" name="contact" placeholder="Enter your contact number" required><br><br>
 
     <label for="userType">Are you a student or staff?</label><br>
+  <div>
     <input type="radio" id="student" name="userType" value="student" required>
     <label for="student">Student</label>
+  </div>
+  <div>
     <input type="radio" id="staff" name="userType" value="staff">
-    <label for="staff">Staff</label><br><br>
+    <label for="staff">Staff</label>
+  </div>
 
     <div id="emailField" style="display:none;">
       <label for="email">Email ID:</label>
