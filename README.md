@@ -1,14 +1,14 @@
-# [Project Name] 🎯
+# ClaimSpot 🎯
 
 
 ## Basic Details
-### Team Name: [Name]
+### Team Name: TechSavvy
 
 
 ### Team Members
-- Member 1: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
+- Member 1: Diya Nazeer - LBSITW,Trivandrum
+- Member 2: Anakha S - LBSITW,Trivandrum
+- Member 3: Anjana Satheesh - LBSITW,Trivandrum
 
 ### Hosted Project Link
 [mention your project hosted project link here]
