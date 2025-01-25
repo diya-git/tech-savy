@@ -3,41 +3,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lost and Found</title>
-    <link href="styles.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lost and Found</title>
+  <link href="styles.css" rel="stylesheet">
 </head>
 <body class="bg-color">
-    <h1>Lost and Found</h1><break>
-    <br>
-    
-    <!-- Button to navigate to form to create a new post -->
-    <a href="create_post.php"><button class="butt">Create New Post</button></a><break>
+  <h1>Lost and Found</h1><break>
 
-    <section>
-        <h2 class="head2">Lost Items</h2><break>
-    </section>
-    <?php
-    $sql = "SELECT * FROM posts WHERE found = 0"; // Get lost items that are not marked as found
-    $result = $conn->query($sql);
+  <!-- Button to navigate to form to create a new post -->
+  <a href="create_post.php"><button class="butt">Create New Post</button></a><break>
 
-    if ($result->num_rows > 0) {
-        while($row = $result->fetch_assoc()) {
-            echo "<div>";
-            echo "<h3>" . $row['name'] . " - " . $row['dept'] . " - Year " . $row['year'] . "</h3>";
-            echo "<p>" . $row['description'] . "</p>";
-            $images = explode(",", $row['images']);
-            foreach ($images as $image) {
-                echo "<img src='uploads/$image' alt='Image' width='200'>";
-            }
+  <?php
+  // Fetch lost items that are not marked as found
+  $sql = "SELECT * FROM posts WHERE found = FALSE"; 
+  $result = $conn->query($sql);
 
-            echo "<br><a href='delete_post.php?id=" . $row['id'] . "'><button>Mark as Found</button></a>";
-            echo "</div><hr>";
-        }
-    } else {
-        echo "No lost items found.";
-    }
-    ?>
+  if ($result->num_rows > 0) {
+      while($row = $result->fetch_assoc()) {
+          echo "<div>";
+          echo "<h3>" . htmlspecialchars($row['name']) . " - Year: " . htmlspecialchars($row['year']) . ", Dept: " . htmlspecialchars($row['dept']) . "</h3>";
+          echo "<p>" . htmlspecialchars($row['description']) . "</p>";
+          
+          // Display images if available
+          if (!empty($row['images'])) {
+              foreach (explode(",", $row['images']) as $image) {
+                  echo "<img src='uploads/" . htmlspecialchars($image) . "' alt='Image' width='200'>";
+              }
+          }
+
+          // Mark as found button with email prompt
+          echo "<form action='mark_as_found.php' method='POST'>
+                  Email: 
+                  <input type='email' name='email' required />
+                  <input type='hidden' name='id' value='" . htmlspecialchars($row['id']) . "' />
+                  <button type='submit'>Mark as Found</button> 
+                </form>";
+          echo "</div><hr>";
+      }
+  } else {
+      echo "No lost items found.";
+  }
+  ?>
+  
 </body>
 </html>
