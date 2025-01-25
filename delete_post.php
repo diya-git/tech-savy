@@ -27,10 +27,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     }
                 }
             } else {
-                echo "Email does not match.";
+                echo "<script>alert('Email does not match.'); window.history.back();</script>";
             }
         } else {
-            echo "Post not found.";
+            echo "<script>alert('Post not found.'); window.history.back();</script>";
         }
         
         $stmt->close();
