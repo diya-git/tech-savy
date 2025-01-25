@@ -15,7 +15,9 @@
     <!-- Button to navigate to form to create a new post -->
     <a href="create_post.php"><button class="butt">Create New Post</button></a><break>
 
-    <h2>Lost Items</h2><break>
+    <section>
+        <h2 class="head2">Lost Items</h2><break>
+    </section>
     <?php
     $sql = "SELECT * FROM posts WHERE found = 0"; // Get lost items that are not marked as found
     $result = $conn->query($sql);
