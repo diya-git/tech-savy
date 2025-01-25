@@ -8,13 +8,14 @@
     <title>Lost and Found</title>
     <link href="styles.css" rel="stylesheet">
 </head>
-<body>
-    <h1>Lost and Found</h1>
+<body class="bg-color">
+    <h1>Lost and Found</h1><break>
+    <br>
     
     <!-- Button to navigate to form to create a new post -->
-    <a href="create_post.php"><button>Create New Post</button></a>
+    <a href="create_post.php"><button class="butt">Create New Post</button></a><break>
 
-    <h2>Lost Items</h2>
+    <h2>Lost Items</h2><break>
     <?php
     $sql = "SELECT * FROM posts WHERE found = 0"; // Get lost items that are not marked as found
     $result = $conn->query($sql);

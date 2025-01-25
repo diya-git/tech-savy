@@ -1,6 +1,13 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
+/* .bg-color{
+  background:linear-gradient(rgb(215, 67, 215),rgb(83, 83, 190));} */
+.butt{
+  color:black;
+  background-color: rgb(245, 243, 243);
+}
+/* body {
+  font-family: Arial, sans-serif;background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fbc2eb, #a1c4fd, #c2e9fb);
+  background-size: 300% 300%;
+  animation: gradientAnimation 8s ease infinite;
   margin: 0;
   padding: 0;
   display: flex;
@@ -8,13 +15,43 @@ body {
   align-items: center;
   height: 100vh;
   color: #333;
+} */
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(45deg,#ff9a9e, #fad0c4, #fbc2eb, #a1c4fd, #0d5576);
+  background-size: 300% 300%;
+  animation: gradientAnimation 8s ease infinite;
 }
 
-h1 {
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.heading{
+  font-size: 30px;
+  font-weight: bold;
+  color:darkblue;
+}
+/* h1 {
   text-align: center;
   margin-bottom: 20px;
   color: #ff5e57;
-}
+} */
 
 form {
   background: white;
@@ -39,12 +76,15 @@ input, select, textarea, button {
 }
 
 button {
-  background-color: #ff5e57;
+  padding: 15px 30px;
   color: white;
   font-weight: bold;
+  border-radius: 5%;
   cursor: pointer;
+  font-size: 16px;
+  transition: font-size 0.3s ease, background-color 0.3s ease;
 }
 
 button:hover {
-  background-color: #e14b45;
-}
+  border-color: black; 
+  font-size: 24px;}
