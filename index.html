@@ -1,11 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tech-savvy</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lost Item Form</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <p>Try out</p>
+  <h1>Lost it🥺 Form</h1>
+  <!-- <form action="submit.php" method="POST" enctype="multipart/form-data" id="lostForm"> -->
+  <form action="submit.php" method="POST" enctype="multipart/form-data">
+
+    <label for="name">Your Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="year">Year:</label>
+    <select id="year" name="year">
+      <option value="1">First</option>
+      <option value="2">Second</option>
+      <option value="3">Third</option>
+      <option value="4">Fourth</option>
+    </select><br>
+
+    <label for="dept">Department:</label>
+    <select id="dept" name="dept">
+      <option value="cs1">CS1</option>
+      <option value="cs2">CS2</option>
+      <option value="it">IT</option>
+      <option value="ece">ECE</option>
+      <option value="ere">ERE</option>
+      <option value="civil">CIVIL</option>
+    </select><br><br>
+
+    <label for="images">Upload Images of Lost Item:</label>
+    <input type="file" id="images" name="images[]" accept="image/*" multiple><br><br>
+
+    <label for="description">Description:</label>
+    <textarea id="description" name="description" rows="6" cols="50"></textarea><br><br>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <script src="script.js"></script>
 </body>
 </html>
