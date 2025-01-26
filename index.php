@@ -9,11 +9,21 @@
   <link href="styles.css" rel="stylesheet">
 </head>
 <body class="bg-color">
-  <h1>Lost and Found</h1><break>
+<div class="magnifier-container">
+  <div class="magnifier">
+    <div class="magnifier-lens"></div>
+ 
+</div>
+
+    
+<br>
+  <h1 class="lf">Lost and Found</h1><break>
 
   <!-- Button to navigate to form to create a new post -->
   <a href="create_post.php"><button class="butt">Create New Post</button></a><break>
 
+  <br>
+<h3 class="new-head">List</h3>
   <?php
   // Fetch lost items that are not marked as found
   $sql = "SELECT * FROM posts WHERE found = FALSE"; 
@@ -37,7 +47,7 @@
                   Email: 
                   <input type='email' name='email' required />
                   <input type='hidden' name='id' value='" . htmlspecialchars($row['id']) . "' />
-                  <button type='submit'>Mark as Found</button> 
+                  <button type='submit' class='buttnew' >Mark as Found</button> 
                 </form>";
           echo "</div><hr>";
       }
