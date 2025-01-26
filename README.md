@@ -38,10 +38,10 @@ For Software:
 ### Implementation
 For Software:
 # Installation
-[commands]
+[---]
 
 # Run
-[commands]
+[---]
 
 ### Project Documentation
 For Software:
@@ -69,8 +69,8 @@ For Software:
 [Add any extra demo materials/links]
 
 ## Team Contributions
-- Diya Nazeer:Created the Loader page, and its css, enabled scroll for the lost item form, 
-- Anakha S: Integrated PHP to enable user authentication to delete a post ,delete post, Javascript
+- Diya Nazeer:Created the Loader page, and its css, enabled scroll for the lost item form, Functionalities to display a post 
+- Anakha S: Integrated PHP to enable user authentication to delete a post ,delete post, Javascript, 
 - Anjana Satheesh: Lost item form alignment, display post, Enabled submission functionality on the website
 
 ---
