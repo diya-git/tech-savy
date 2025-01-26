@@ -14,26 +14,26 @@
 [mention your project hosted project link here]
 
 ### Project Description
-[2-3 lines about what your project does]
+If someone has lost something in the college campus ,you can post it on the website. 
+
+
+
+
+You have to provide your details,with emailID,and upload a picture of the lost item with description and the location from where you found it/last saw it.
 
 ### The Problem statement
-[What ridiculous problem are you solving?]
+Misplaced.Not Forgotten:Reuniting Items and Owners on Campus
 
 ### The Solution
-[How are you solving it? Keep it fun!]
+- The website provides a user-friendly interface to create posts, view lost items, and mark items as found, with enhanced security that allows only the person who posted an item (via email) to delete their own post.
 
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
-
-For Hardware:
-- [List main components]
-- [List specifications]
-- [List tools required]
+- HTML
+- CSS
+- JavaScript
+- PHP
 
 ### Implementation
 For Software:
@@ -46,41 +46,19 @@ For Software:
 ### Project Documentation
 For Software:
 
-# Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
+# Screenshots
+![landing page](https://github.com/user-attachments/assets/f97ee5cb-9d12-473e-8d72-a154e7160e16)
+*Loader*
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
+![Homepage1](https://github.com/user-attachments/assets/2c09b6e7-b026-41f5-ab1e-191f66b18af2)
+*Landing page*
 
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+![Homepage2](https://github.com/user-attachments/assets/e4801ee9-6d2e-4a55-8e14-36a6164da4ea)
+*Landing page*
 
-# Diagrams
-![Workflow](Add your workflow/architecture diagram here)
-*Add caption explaining your workflow*
+![Lost item form](https://github.com/user-attachments/assets/76f31022-28d3-453a-a19f-cb22fbe7ac3e)
+*Lost item form*
 
-For Hardware:
-
-# Schematic & Circuit
-![Circuit](Add your circuit diagram here)
-*Add caption explaining connections*
-
-![Schematic](Add your schematic diagram here)
-*Add caption explaining the schematic*
-
-# Build Photos
-![Team](Add photo of your team here)
-
-
-![Components](Add photo of your components here)
-*List out all components shown*
-
-![Build](Add photos of build process here)
-*Explain the build steps*
-
-![Final](Add photo of final product here)
-*Explain the final build*
 
 ### Project Demo
 # Video
