@@ -70,7 +70,7 @@ For Software:
 
 ## Team Contributions
 - Diya Nazeer:Created the Loader page, and its css, enabled scroll for the lost item form, Functionalities to display a post 
-- Anakha S: Integrated PHP to enable user authentication to delete a post ,delete post, Javascript, 
+- Anakha S: Integrated PHP to enable user authentication to delete a post ,delete post, Javascript, CSS
 - Anjana Satheesh: Lost item form alignment, display post, Enabled submission functionality on the website
 
 ---
