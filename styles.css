@@ -1,91 +1,162 @@
-/* .bg-color{
-  background:linear-gradient(rgb(215, 67, 215),rgb(83, 83, 190));} */
-  .butt{
-    color:black;
-    background-color: rgb(245, 243, 243);
-  }
-  /* body {
-    font-family: Arial, sans-serif;background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fbc2eb, #a1c4fd, #c2e9fb);
-    background-size: 300% 300%;
-    animation: gradientAnimation 8s ease infinite;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    color: #333;
-  } */
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fbc2eb, #a1c4fd, #0d5576);
+  background-size: 300% 300%;
+  animation: gradientAnimation 8s ease infinite;
+}
+.h1head{
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-style: italic;
+font-size: 35px;
+.frm{
+  min-width: min-content;
+  height: fit-content;
+}
+}
+.buttnew{
+background:linear-gradient(blue,darkviolet);
+color: white;
+font-size:20px;
+
+}
+.buttnew:hover{
+  background-color: ;
+  text-shadow: none;
+  text-decoration: none;
+  text-transform: none;
+  font-size:20px;
+}
+.lf{
+  color: #000;
+  text-shadow:5px 5px 15px white;
+  font-style: italic;
+}
+
+.magnifier-container {
+  position: relative;
+  display: inline-block;
+}
+
+.magnifier {
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 100px;
+  border: 5px solid #000;
+  border-radius: 50%;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+  animation: rotateMagnifier 3s infinite linear;
+}
+
+.magnifier-lens {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid #000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.magnifier-container:hover .magnifier-lens {
   
-  body {
-    margin: 0;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column; /**/
-    align-items: center;
-    justify-content: center;
-    /*overflow: hidden;*/
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(45deg,#ff9a9e, #fad0c4, #fbc2eb, #a1c4fd, #0d5576);
-    background-size: 300% 300%;
-    animation: gradientAnimation 8s ease infinite;
+  width: 80px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.8);
+}
+.content {
+  padding: 10px;
+  background: #f0f0f0;
+  margin-top: 120px;
+}
+
+/* Animation for rotating magnifier */
+@keyframes rotateMagnifier {
+  0% {
+    transform: rotate(0deg) translate(-50%, -50%);
   }
-  
-  @keyframes gradientAnimation {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
+  100% {
+    transform: rotate(360deg) translate(-50%, -50%);
   }
-  
-  .heading{
-    font-size: 30px;
-    font-weight: bold;
-    color:darkblue;
+}
+
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
   }
-  /* h1 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #ff5e57;
-  } */
-  
-  form {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 400px;
+  50% {
+    background-position: 100% 50%;
   }
-  
-  label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
+  100% {
+    background-position: 0% 50%;
   }
-  
-  input, select, textarea, button {
-    width: 100%;
-    margin-bottom: 15px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  button {
-    padding: 15px 30px;
-    color: white;
-    font-weight: bold;
-    border-radius: 5%;
-    cursor: pointer;
-    font-size: 16px;
-    transition: font-size 0.3s ease, background-color 0.3s ease;
-  }
-  
-  button:hover {
-    border-color: black; 
-    font-size: 24px;}
+}
+
+form {
+  background: white;
+  padding-right: 30px;
+  padding-left: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 400px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+button {
+  padding: 15px 30px;
+  color: white;
+  font-weight: bold;
+  border-radius: 5%;
+  background:none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: font-size 0.3s ease, background-color 0.3s ease;
+}
+input, select, textarea, button {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.new-head{
+  font-size: 30px;
+  color: #0d5576;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, cursive ;
+}
+
+button:hover {
+  border-color: black; 
+  font-size: 24px;
+  text-shadow: 2px 2px 8px black;
+}
+
+.radio-group {
+  margin-top: 10px;
+}
+
+.radio-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.radio-item label {
+  margin-left: 5px;
+}
