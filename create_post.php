@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -8,8 +7,8 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Lost Item Form</h1>
-  <form id="lostForm" action="submit_post.php" method="POST" enctype="multipart/form-data">
+  <h1 class="h1head">Lost Item Form</h1>
+  <form id="lostForm" action="submit_post.php" method="POST" enctype="multipart/form-data" class="frm">
     <label for="name">Your Name:</label>
     <input type="text" id="name" name="name" required><br><br>
 
@@ -91,7 +90,7 @@
     <input type='file' id='images' name='images[]' accept='image/*' multiple required><br><br>
 
     <!-- Submit Button -->
-    <button type='submit'>Submit</button>
+    <button type='submit' class='buttnew'>Submit</button>
   </form>
 
   <!-- JavaScript to handle dynamic fields -->
