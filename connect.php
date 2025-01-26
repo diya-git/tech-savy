@@ -5,6 +5,7 @@ $username = "root";
 $password = ""; 
 $dbname = "lost_and_found"; 
 
+
 // Create connection to MySQL
 $conn = new mysqli($servername, $username, $password, $dbname);
 
