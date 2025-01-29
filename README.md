@@ -35,10 +35,6 @@ For Software:
 - JavaScript
 - PHP
 
-### Implementation
-For Software:
-
-
 ### Project Documentation
 For Software:
 
