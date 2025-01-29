@@ -58,14 +58,13 @@ For Software:
 
 ### Project Demo
 # Video
-https://drive.google.com/file/d/1Z2BsrQZesYBGdtRucR3rnAyon7ud3yrg/view?usp=sharing
-*Takes you through the website.*
+https://drive.google.com/file/d/1Z2BsrQZesYBGdtRucR3rnAyon7ud3yrg/view?usp=sharing *Takes you through the website.*
 
 ## Team Contributions
 
-Diya Nazeer: Created the loader page and its CSS, enabled scroll functionality for the lost item form, and implemented the backend functionality to display posts dynamically on the platform.
-Anakha S: Integrated PHP to enable user authentication for post deletion, and worked on JavaScript and CSS for interactive elements and styling.
-Anjana Satheesh: Worked on aligning the lost item form, implemented the post display functionality, and enabled submission functionality on the website.
+- Diya Nazeer: Created the loader page and its CSS, enabled scroll functionality for the lost item form, and implemented the backend functionality to display posts dynamically on the platform.
+- Anakha S: Integrated PHP to enable user authentication for post deletion, and worked on JavaScript and CSS for interactive elements and styling.
+- Anjana Satheesh: Worked on aligning the lost item form, implemented the post display functionality, and enabled submission functionality on the website.
 
 ---
 Made with ❤️ at TinkerHub
