@@ -14,15 +14,15 @@
 tech-savy-seven.vercel.app
 
 ### Project Description
-If someone has lost something in the college campus ,you can post it on the website. 
+If someone has lost something in the college campus, you can post it on the website. 
 
 
 
 
-You have to provide your details,with emailID,and upload a picture of the lost item with description and the location from where you found it/last saw it.
+You have to provide your details,with email ID, and upload a picture of the lost item with description and the location from where you found it/last saw it.
 
 ### The Problem statement
-Misplaced.Not Forgotten:Reuniting Items and Owners on Campus
+Misplaced. Not Forgotten: Reuniting Items and Owners on Campus
 
 ### The Solution
 - The website provides a user-friendly interface to create posts, view lost items, and mark items as found, with enhanced security that allows only the person who posted an item (via email) to delete their own post.
@@ -37,11 +37,7 @@ For Software:
 
 ### Implementation
 For Software:
-# Installation
-[---]
 
-# Run
-[---]
 
 ### Project Documentation
 For Software:
@@ -62,16 +58,14 @@ For Software:
 
 ### Project Demo
 # Video
-[Add your demo video link here]
-*Explain what the video demonstrates*
-
-# Additional Demos
-[Add any extra demo materials/links]
+https://drive.google.com/file/d/1Z2BsrQZesYBGdtRucR3rnAyon7ud3yrg/view?usp=sharing
+*Takes you through the website.*
 
 ## Team Contributions
-- Diya Nazeer:Created the Loader page, and its css, enabled scroll for the lost item form, Functionalities to display a post 
-- Anakha S: Integrated PHP to enable user authentication to delete a post ,delete post, Javascript, CSS
-- Anjana Satheesh: Lost item form alignment, display post, Enabled submission functionality on the website
+
+Diya Nazeer: Created the loader page and its CSS, enabled scroll functionality for the lost item form, and implemented the backend functionality to display posts dynamically on the platform.
+Anakha S: Integrated PHP to enable user authentication for post deletion, and worked on JavaScript and CSS for interactive elements and styling.
+Anjana Satheesh: Worked on aligning the lost item form, implemented the post display functionality, and enabled submission functionality on the website.
 
 ---
 Made with ❤️ at TinkerHub
